@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Delhi - a simple tourism guide to Delhi's places, food and culture.">
+  <title>Explore Delhi | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER + NAVBAR (har page pe same) ========== -->
+  <header>
+    <nav>
+      <h1 class="logo">Explore Delhi</h1>
+      <button id="menu-btn" aria-label="Open menu">&#9776;</button>
+      <ul id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="food-culture.html">Food &amp; Culture</a></li>
+        <li><a href="plan-trip.html">Plan Your Trip</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION (bada banner) ========== -->
+    <section id="hero">
+      <h2>Welcome to Delhi</h2>
+      <p>The city of history, food and culture. Everything you need for your trip in one place.</p>
+      <a href="places.html" class="btn">Explore Places</a>
+    </section>
+
+    <!-- ========== INTRO ========== -->
+    <section class="container">
+      <h2>About This Guide</h2>
+      <p>
+        Delhi is the capital of India and one of the oldest cities in the world.
+        Tourists and new students often find information about it scattered on many websites.
+        This website brings the best places, local food and a simple trip enquiry form together.
+      </p>
+      <ul class="feature-list">
+        <li>12 popular places in 4 categories</li>
+        <li>Famous street food and festivals</li>
+        <li>Easy trip enquiry form</li>
+        <li>Works on mobile and desktop</li>
+      </ul>
+    </section>
+
+    <!-- ========== POPULAR PLACES (3 cards) ========== -->
+    <section class="container">
+      <h2>Popular Places</h2>
+      <div class="card-row">
+
+        <article class="card">
+          <img src="images/india-gate.png" alt="India Gate in Delhi">
+          <h3>India Gate</h3>
+          <p>A war memorial and the most famous landmark of Delhi.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/red-fort.png" alt="Red Fort in Delhi">
+          <h3>Red Fort</h3>
+          <p>A Mughal-era fort where the Prime Minister hoists the flag on Independence Day.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/qutub-minar.png" alt="Qutub Minar in Delhi">
+          <h3>Qutub Minar</h3>
+          <p>A tall brick minaret and UNESCO World Heritage Site.</p>
+        </article>
+
+      </div>
+      <p><a href="places.html" class="btn">See All Places</a></p>
+    </section>
+
+    <!-- ========== VIDEO (media element) ========== -->
+    <section class="container">
+      <h2>Delhi in a Video</h2>
+      <!-- videos folder mein delhi.mp4 naam se koi bhi chhota video rakho -->
+      <video controls width="640">
+        <source src="videos/delhi.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>&copy; 2026 Explore Delhi | Web Development Mini-Project</p>
+    <p><a href="#hero">Back to top</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

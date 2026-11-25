@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send a trip enquiry for your Delhi visit.">
+  <title>Explore Delhi | Plan Your Trip</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1 class="logo">Explore Delhi</h1>
+      <button id="menu-btn" aria-label="Open menu">&#9776;</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="food-culture.html">Food &amp; Culture</a></li>
+        <li><a href="plan-trip.html" class="active">Plan Your Trip</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="container">
+      <h2>Plan Your Trip</h2>
+      <p>Fill this form and we will help you plan your Delhi visit. All fields are required.</p>
+
+      <!--
+        novalidate = browser ki apni checking band, taaki hamara JavaScript validation chale.
+        Har input ke neeche ek <span class="error"> hai, JS error message yahin dikhayega.
+      -->
+      <form id="tripForm" novalidate>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@gmail.com">
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="10 digit mobile number">
+          <span class="error" id="phoneError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Travel Date</label>
+          <input type="date" id="date" name="date">
+          <span class="error" id="dateError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="travellers">Number of Travellers</label>
+          <input type="number" id="travellers" name="travellers" min="1" max="20" placeholder="1 to 20">
+          <span class="error" id="travellersError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">Main Interest</label>
+          <select id="interest" name="interest">
+            <option value="">-- Select --</option>
+            <option value="historical">Historical Places</option>
+            <option value="religious">Religious Places</option>
+            <option value="nature">Nature and Parks</option>
+            <option value="food">Food and Shopping</option>
+          </select>
+          <span class="error" id="interestError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" rows="4" placeholder="Any special request?"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Enquiry</button>
+
+        <!-- Success message yahan dikhega -->
+        <p id="successMsg" class="success"></p>
+
+      </form>
+    </section>
+
+    <!-- ========== BUDGET TABLE ========== -->
+    <section class="container">
+      <h2>Rough Daily Budget</h2>
+      <table>
+        <caption>Approximate cost per person per day (in &#8377;)</caption>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Food</th>
+            <th>Travel</th>
+            <th>Entry Tickets</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Budget</td>
+            <td>300 - 500</td>
+            <td>100 - 200 (Metro)</td>
+            <td>50 - 300</td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>600 - 1000</td>
+            <td>300 - 600 (Cab)</td>
+            <td>100 - 500</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><small>Note: These are only approximate values for demo purposes.</small></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Explore Delhi | Web Development Mini-Project</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

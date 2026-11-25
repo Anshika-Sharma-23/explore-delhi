@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Popular places to visit in Delhi: historical, religious, nature and shopping.">
+  <title>Explore Delhi | Places</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1 class="logo">Explore Delhi</h1>
+      <button id="menu-btn" aria-label="Open menu">&#9776;</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html" class="active">Places</a></li>
+        <li><a href="food-culture.html">Food &amp; Culture</a></li>
+        <li><a href="plan-trip.html">Plan Your Trip</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container" id="top">
+      <h2>Places to Visit in Delhi</h2>
+      <p>Click a button to see only that type of place.</p>
+
+      <!-- ========== FILTER BUTTONS ========== -->
+      <div class="filter-bar">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="historical">Historical</button>
+        <button class="filter-btn" data-filter="religious">Religious</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="food">Food &amp; Shopping</button>
+      </div>
+
+      <!-- ========== 12 PLACE CARDS ========== -->
+      <div class="card-row" id="places-container">
+
+        <!-- ---- HISTORICAL ---- -->
+        <article class="card" data-category="historical">
+          <img src="images/india-gate.png" alt="India Gate">
+          <h3>India Gate</h3>
+          <p>War memorial built in memory of Indian soldiers. Best visited in the evening.</p>
+        </article>
+
+        <article class="card" data-category="historical">
+          <img src="images/red-fort.png" alt="Red Fort">
+          <h3>Red Fort</h3>
+          <p>Huge red sandstone Mughal fort in Old Delhi. A UNESCO World Heritage Site.</p>
+        </article>
+
+        <article class="card" data-category="historical">
+          <img src="images/qutub-minar.png" alt="Qutub Minar">
+          <h3>Qutub Minar</h3>
+          <p>A 73 metre tall minaret in Mehrauli, built in the 12th century.</p>
+        </article>
+
+        <article class="card" data-category="historical">
+          <img src="images/humayuns-tomb.png" alt="Humayun's Tomb">
+          <h3>Humayun's Tomb</h3>
+          <p>Beautiful garden tomb of the Mughal emperor Humayun.</p>
+        </article>
+
+        <!-- ---- RELIGIOUS ---- -->
+        <article class="card" data-category="religious">
+          <img src="images/akshardham.png" alt="Akshardham Temple">
+          <h3>Akshardham Temple</h3>
+          <p>A grand temple known for its carvings, exhibitions and evening water show.</p>
+        </article>
+
+        <article class="card" data-category="religious">
+          <img src="images/lotus-temple.png" alt="Lotus Temple">
+          <h3>Lotus Temple</h3>
+          <p>A peaceful Bahai temple shaped like a lotus flower. Open to all.</p>
+        </article>
+
+        <article class="card" data-category="religious">
+          <img src="images/jama-masjid.png" alt="Jama Masjid">
+          <h3>Jama Masjid</h3>
+          <p>One of the largest mosques in India, near Red Fort.</p>
+        </article>
+
+        <!-- ---- NATURE ---- -->
+        <article class="card" data-category="nature">
+          <img src="images/lodhi-garden.png" alt="Lodhi Garden">
+          <h3>Lodhi Garden</h3>
+          <p>A calm park with old tombs, perfect for a morning walk.</p>
+        </article>
+
+        <article class="card" data-category="nature">
+          <img src="images/sunder-nursery.png" alt="Sunder Nursery">
+          <h3>Sunder Nursery</h3>
+          <p>A heritage park with gardens, trees and monuments near Humayun's Tomb.</p>
+        </article>
+
+        <!-- ---- FOOD & SHOPPING ---- -->
+        <article class="card" data-category="food">
+          <img src="images/chandni-chowk.png" alt="Chandni Chowk">
+          <h3>Chandni Chowk</h3>
+          <p>Busy old market famous for street food, sweets and cloth shops.</p>
+        </article>
+
+        <article class="card" data-category="food">
+          <img src="images/connaught-place.png" alt="Connaught Place">
+          <h3>Connaught Place</h3>
+          <p>Central Delhi's circular market with cafes, restaurants and shops.</p>
+        </article>
+
+        <article class="card" data-category="food">
+          <img src="images/dilli-haat.png" alt="Dilli Haat">
+          <h3>Dilli Haat</h3>
+          <p>Open-air craft bazaar with handicrafts and food stalls from many states.</p>
+        </article>
+
+      </div>
+
+      <p><a href="#top" class="btn">Back to top</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Explore Delhi | Web Development Mini-Project</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
