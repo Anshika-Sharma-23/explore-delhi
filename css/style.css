@@ -1,0 +1,249 @@
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #c0392b;
+  --dark: #2c3e50;
+  --light: #f7f4ef;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--light);
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 { color: var(--dark); margin-bottom: 12px; }
+h3 { color: var(--main); margin: 10px 0 6px; }
+p  { margin-bottom: 12px; }
+ul, ol { margin: 0 0 12px 22px; }
+a  { color: var(--main); }
+img { max-width: 100%; display: block; }
+video { max-width: 100%; border-radius: 8px; }
+
+/* ---------- Header / Navbar ---------- */
+header {
+  background-color: var(--dark);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+}
+
+.logo { color: var(--white); font-size: 1.5rem; }
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+}
+
+#menu a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+#menu a:hover,
+#menu a.active {
+  background-color: var(--main);
+}
+
+#menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+#hero {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 40px 20px;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url("../images/india-gate.jpg") center/cover no-repeat,
+              var(--dark);
+}
+
+#hero h2 { color: var(--white); font-size: 2.6rem; }
+#hero p  { font-size: 1.2rem; max-width: 600px; }
+
+/* ---------- Common classes ---------- */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--main);
+  color: var(--white);
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:hover { background-color: #96281b; }
+
+.feature-list { list-style: square; }
+
+.jump-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0 0 12px 0;
+}
+
+/* ---------- Cards ---------- */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1 1 250px;
+  max-width: 340px;
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-5px); }
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #ddd;
+}
+
+.hide { display: none; }
+
+/* ---------- Filter buttons ---------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0 20px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border: 2px solid var(--main);
+  background-color: var(--white);
+  color: var(--main);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--main);
+  color: var(--white);
+}
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  margin-bottom: 12px;
+}
+caption { font-weight: bold; padding: 8px; text-align: left; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+th { background-color: var(--dark); color: var(--white); }
+tbody tr:nth-child(even) { background-color: #f1ece4; }
+
+/* ---------- Form ---------- */
+form {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-group { margin-bottom: 16px; }
+
+label { display: block; font-weight: bold; margin-bottom: 4px; }
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--main);
+}
+
+input.invalid, select.invalid { border-color: red; }
+.error   { color: red; font-size: 0.9rem; display: block; min-height: 18px; }
+.success { color: green; font-weight: bold; margin-top: 12px; }
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+footer a { color: #f5b7b1; }
+
+/* ---------- Responsive (mobile) ---------- */
+@media (max-width: 768px) {
+  #menu-btn { display: block; }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    padding-top: 10px;
+  }
+  #menu.open { display: flex; }
+
+  nav { flex-wrap: wrap; }
+
+  #hero h2 { font-size: 1.8rem; }
+
+  .card { max-width: 100%; }
+  .jump-links { flex-direction: column; gap: 5px; }
+}
